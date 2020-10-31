@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "client": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode=production",
+    "client": "webpack-dev-server",
     "dev": "npm-run-all --silent --parallel start client"
   },
   "repository": {
