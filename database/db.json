@@ -1,0 +1,22 @@
+{
+  "grades": [
+    {
+      "name": "jase thomson",
+      "course": "math",
+      "grade": "95",
+      "id": 1
+    },
+    {
+      "name": "evelyn toon",
+      "course": "Art",
+      "grade": "100",
+      "id": 2
+    },
+    {
+      "name": "harper toon thomson",
+      "course": "soccer",
+      "grade": "100",
+      "id": 3
+    }
+  ]
+}
