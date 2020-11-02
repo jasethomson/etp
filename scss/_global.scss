@@ -5,6 +5,15 @@ html {
 body {
   margin: 0;
   height: 100%;
+  font-family: $first-font;
+  color: $font-color;
+}
+
+a {
+  color: $font-color;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .hidden {

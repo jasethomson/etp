@@ -27,7 +27,7 @@ export default class App extends React.Component {
   render() {
     return (
       <Router>
-        <div>
+        <React.Fragment>
           <Nav />
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
@@ -48,7 +48,7 @@ export default class App extends React.Component {
               <Home />
             </Route>
           </Switch>
-        </div>
+        </React.Fragment>
       </Router>
     );
   }

@@ -3,7 +3,14 @@ html {
 
 body {
   margin: 0;
-  height: 100%; }
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  color: #2b2b2b; }
+
+a {
+  color: #2b2b2b; }
+  a:hover {
+    text-decoration: none; }
 
 .hidden {
   display: none !important; }
@@ -32,114 +39,52 @@ h4 {
 h5 {
   font-size: calc(22px + (20 - 22) * ((100vw - 300px) / (1600 - 300))); }
 
-.input {
-  display: block;
-  width: 300px;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: .25rem;
-  -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-  transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-  position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: auto;
-  padding: 10px;
-  margin: 1rem 0rem;
-  font-size: 16px;
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  border-left: none; }
-
-.button {
-  display: inline-block;
-  font-weight: 400;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border: 1px solid transparent;
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-  color: #fff;
-  background-color: #0062cc;
-  border-color: #005cbf;
-  line-height: 1.5;
-  border-radius: .3rem;
-  margin: 1rem 0rem; }
-
-.landing {
-  padding: 3rem 5rem; }
-  @media (max-width: 767px) {
-    .landing {
-      padding: 1rem; } }
-  .landing header {
+header {
+  height: 56px;
+  padding: 0rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  header .headerTitle {
+    font-size: 2rem; }
+  header nav {
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border-bottom: 2px solid #dee2e6; }
-    @media (max-width: 900px) {
-      .landing header {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column; } }
-  .landing .mainContents {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-top: 1rem; }
-    @media (max-width: 900px) {
-      .landing .mainContents {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column; } }
-  .landing .addGradeContents {
-    margin-left: 1rem; }
-    @media (max-width: 767px) {
-      .landing .addGradeContents {
-        margin-left: 0rem; } }
-  .landing .table {
-    margin-right: 1rem; }
-    @media (max-width: 767px) {
-      .landing .table {
-        margin-right: 0rem; } }
-  .landing h3 {
-    padding: .5rem 0rem; }
-  .landing form {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    header nav ul {
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      list-style-type: none;
+      padding-left: 0rem;
+      margin-bottom: 0rem; }
+      header nav ul li {
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 0rem 1.5rem; }
+        header nav ul li a {
+          text-decoration: none; }
+
+.homeContainer .homeworkContainer {
+  padding: 0rem 1rem;
+  padding-top: 4rem; }
+  .homeContainer .homeworkContainer .kardContent {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -147,90 +92,51 @@ h5 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-  .landing th {
-    border-top: none; }
-  .landing .buttonContainer .cancelButton {
-    margin-left: 1rem;
-    background: none;
-    color: #495057; }
-  .landing .tableButton {
-    background: none;
-    color: #495057;
-    margin: 0rem;
-    padding: .25rem .75rem;
-    margin-top: 8px; }
-  .landing .inputContents {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-  .landing .tdText {
-    padding: calc(54px - 29px); }
-    @media (max-width: 767px) {
-      .landing .tdText {
-        padding: 12px;
-        padding-left: 50%; } }
-  .landing .input {
-    margin: 0rem;
-    margin-bottom: 1rem; }
-    @media (max-width: 767px) {
-      .landing .input {
-        width: 100%; } }
-  .landing .fa-lg {
-    padding: 1rem;
-    background: rgba(0, 0, 0, 0.05);
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-    border-right: none;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 0; }
-  .landing .fa-user {
-    height: 46px;
-    width: 51px; }
-  .landing .fa-list-alt {
-    height: 46px;
-    width: 51px; }
-  .landing .fa-graduation-cap {
-    height: 46px;
-    width: 51px; }
-  @media only screen and (max-width: 767px), (min-device-width: 767px) and (max-device-width: 1024px) {
-    .landing {
-      /* Force table to not be like tables anymore */
-      /* Hide table headers (but not display: none;, for accessibility) */
-      /*
-      Label the data
-      */ }
-      .landing table, .landing thead, .landing tbody, .landing th, .landing td, .landing tr {
-        display: block; }
-      .landing thead tr {
-        position: absolute;
-        top: -9999px;
-        left: -9999px; }
-      .landing tr {
-        border: 1px solid #ccc; }
-      .landing td {
-        /* Behave  like a "row" */
-        border: none;
-        border-bottom: 1px solid #eee;
-        position: relative;
-        padding-left: 50%; }
-      .landing td:before {
-        /* Now like a table header */
-        position: absolute;
-        /* Top/left values mimic padding */
-        top: 6px;
-        left: 6px;
-        width: 45%;
-        padding: 12px;
-        font-weight: bold;
-        white-space: nowrap; }
-      .landing td:nth-of-type(1):before {
-        content: "Name"; }
-      .landing td:nth-of-type(2):before {
-        content: "Course"; }
-      .landing td:nth-of-type(3):before {
-        content: "Grade"; }
-      .landing td:nth-of-type(4):before {
-        content: "Operation"; } }
+    .homeContainer .homeworkContainer .kardContent .kardContentHeader {
+      height: 56px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-size: 1.6rem; }
+    .homeContainer .homeworkContainer .kardContent .kardContentBody {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding-top: 2rem; }
+      .homeContainer .homeworkContainer .kardContent .kardContentBody .kard {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        width: calc(25% - 4rem);
+        margin: 0rem 2rem;
+        -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+                box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); }
+      .homeContainer .homeworkContainer .kardContent .kardContentBody .kardImage img {
+        height: 458px;
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+      .homeContainer .homeworkContainer .kardContent .kardContentBody .kardText {
+        padding: 1rem;
+        min-height: 168px; }
+        .homeContainer .homeworkContainer .kardContent .kardContentBody .kardText .kardHeader {
+          padding-bottom: 1rem;
+          font-weight: bold; }
 
 /*# sourceMappingURL=project.css.map */
