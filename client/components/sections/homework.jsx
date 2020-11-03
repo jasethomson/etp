@@ -1,8 +1,5 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
   Link
 } from 'react-router-dom';
 
@@ -16,13 +13,15 @@ export default function Homework() {
         <div className="kardContentBody">
           <div className="kard kard-1">
             <div className="kardImage">
-              <a href="/about">
+              <Link to="/work/productcopy">
                 <img src="/images/uvProductCopy.png" alt="UV Product Copy Image"/>
-              </a>
+              </Link>
             </div>
             <div className="kardText">
               <div className="kardHeader">
-              Product Copy
+                <Link to="/work/productcopy">
+                  Product Copy
+                </Link>
               </div>
               <div className="kardBody">
               Product copy with the power to drive sales (and clicks). Through cohesive messaging and SEO research, I help show the world what products have to offer.
@@ -32,13 +31,15 @@ export default function Homework() {
           </div>
           <div className="kard kard-2">
             <div className="kardImage">
-              <a href="/about">
+              <Link to="/work/socialmedia">
                 <img src="/images/torridSocialMediaCrop.png" alt="UV Product Copy Image"/>
-              </a>
+              </Link>
             </div>
             <div className="kardText">
               <div className="kardHeader">
-              Social Media
+                <Link to="/work/socialmedia">
+                  Social Media
+                </Link>
               </div>
               <div className="kardBody">
               Short and effective social media posts that communicate a point and create a brand message.
@@ -48,13 +49,15 @@ export default function Homework() {
           </div>
           <div className="kard kard-3">
             <div className="kardImage">
-              <a href="/about">
+              <Link to="/work/seo">
                 <img src="/images/seo.jpg" alt="UV Product Copy Image"/>
-              </a>
+              </Link>
             </div>
             <div className="kardText">
               <div className="kardHeader">
-              SEO
+                <Link to="/work/seo">
+                  SEO
+                </Link>
               </div>
               <div className="kardBody">
               Keyword research and structural organization that makes SEO a crucial part of successful sales.  I use different SEO tools to reach optimal visibility.
@@ -64,13 +67,15 @@ export default function Homework() {
           </div>
           <div className="kard kard-4">
             <div className="kardImage">
-              <a href="/about">
+              <Link to="/work/printcopy">
                 <img src="/images/torridPrintCopy.png" alt="UV Product Copy Image"/>
-              </a>
+              </Link>
             </div>
             <div className="kardText">
               <div className="kardHeader">
-              Print Copy
+                <Link to="/work/printcopy">
+                  Print Copy
+                </Link>
               </div>
               <div className="kardBody">
               Creative collaborations allow email campaigns to be successful. I’ve worked with talented creatives to help launch new collections and products.

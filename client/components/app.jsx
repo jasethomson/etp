@@ -2,14 +2,17 @@ import React from 'react';
 import Home from './home';
 import About from './about';
 import Work from './work';
+import ProductCopy from './work/product';
+import SocialMedia from './work/socialmedia';
+import Seo from './work/seo';
+import PrintCopy from './work/print';
 import Cv from './cv';
 import Contact from './contact';
 import Nav from './nav';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from 'react-router-dom';
 
 export default class App extends React.Component {
@@ -34,6 +37,18 @@ export default class App extends React.Component {
           <Switch>
             <Route path="/about">
               <About />
+            </Route>
+            <Route path="/work/printcopy">
+              <PrintCopy />
+            </Route>
+            <Route path="/work/productcopy">
+              <ProductCopy />
+            </Route>
+            <Route path="/work/seo">
+              <Seo />
+            </Route>
+            <Route path="/work/socialmedia">
+              <SocialMedia />
             </Route>
             <Route path="/work">
               <Work />
